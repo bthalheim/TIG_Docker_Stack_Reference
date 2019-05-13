@@ -14,7 +14,7 @@ services:
       - ./influxdb/influxdb.conf:/etc/influxdb/influxdb.conf:ro
          
   telegraf:
-    image: telegraf:latest
+    image: bthal/telegraf:latest
     container_name: "telegraf"
     
     volumes:
